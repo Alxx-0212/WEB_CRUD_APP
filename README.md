@@ -1,2 +1,2 @@
 # WEB_CRUD_APP
-Simple CRUD web app with ExpressJS and Tailwindcss. 
+Simple CRUD web app build with ExpressJS and Tailwindcss. 
