@@ -1,0 +1,10 @@
+#del_btn {
+    opacity: 0;
+    z-index: 10;
+    position: absolute;
+    left: -25%;
+}
+
+nav {
+    box-shadow: inset 0px 2px 15px 2px #aaaaaa;
+}

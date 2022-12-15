@@ -1,0 +1,50 @@
+<%- include('components/header') %>
+    <div
+        class="w-full h-screen bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 p-4 flex items-center justify-center">
+        <div class="bg-white py-6 px-10 sm:max-w-md w-full rounded-lg ">
+            <div class="sm:text-3xl text-2xl font-semibold text-center text-sky-600 mb-12">
+                Project Information
+            </div>
+            <form method="post" action="http://localhost:3000/add">
+                <div>
+                    <input type="text"
+                        class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500"
+                        placeholder="Name " name="name" />
+                </div>
+                <div>
+                    <input type="email"
+                        class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500 my-8"
+                        placeholder="Email Adress " name="email" />
+                </div>
+                <div class="h-12">
+                    <input type="text"
+                        class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500 mb-8"
+                        placeholder="Project " name="project" />
+                </div>
+                <div class="text-gray-500">
+                    Status :
+                </div>
+                <div class="py-3 flex">
+                    <input type="radio" class="border-sky-400 " value="pending" name="status" />
+                    <div class="px-3 text-red-500">
+                        Pending
+                    </div>
+                    <input type="radio" class="border-sky-400 " value="active" name="status" />
+                    <div class="px-3 text-purple-500">
+                        Active
+                    </div>
+                    <input type="radio" class="border-sky-400 " value="completed" name="status" />
+                    <div class="px-3 text-green-500">
+                        Completed
+                    </div>
+                </div>
+                <div class="flex justify-center my-6">
+                    <button type="submit"
+                        class=" rounded-full  p-3 w-full sm:w-56   bg-gradient-to-r from-sky-600  to-teal-300 text-white text-lg font-semibold ">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <%- include('components/footer') %>
